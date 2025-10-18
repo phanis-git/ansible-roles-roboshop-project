@@ -1,0 +1,6 @@
+---
+- name: "{{ component }} Setup"       # here we are using a variable - > component , so we need to pass variable with value in command line  
+  hosts: "{{ component }}"            # ex: ansible-playbook -i inventory.ini <filename here we can make seperate yaml files like mongodb but i am using main.yaml >
+  become: yes
+  roles: 
+    - "{{ component }}"
