@@ -1,0 +1,9 @@
+MONGODB_HOST: mongodb.devops-phani.fun
+REDIS_HOST: redis.devops-phani.fun
+CATALOGUE_HOST: catalogue.devops-phani.fun
+CART_HOST: cart.devops-phani.fun
+USER_HOST: user.devops-phani.fun
+RABBITMQ_HOST: rabbitmq.devops-phani.fun
+MYSQL_HOST: mysql.devops-phani.fun
+SHIPPING_HOST: shipping.devops-phani.fun
+PAYMENT_HOST: payment.devops-phani.fun

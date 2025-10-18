@@ -1,0 +1,12 @@
+- name: "Placing {{ component }} service to service file" 
+  ansible.builtin.template:
+    src: "{{ component }}.service.j2"
+    dest: "/etc/systemd/system/{{ component }}.service"
+# Here we need to do systemctl daemon reload when the service file contect changes , otherwise we doesnot need to reload
+  notify: daemon reload
+
+- name: "Start the service"
+  ansible.builtin.service:
+    name: "{{ component }}"
+    state: restarted
+    enabled: true

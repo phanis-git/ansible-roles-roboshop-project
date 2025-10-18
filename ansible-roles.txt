@@ -1,1 +1,11 @@
 Ansible roles
+
+
+notifiers or handlers:- when there is a change in something notify others to reload
+or when there is a change in particular task we notify other task , if there is no change we dont need to notify
+
+templates:- Templates are nothing but fixed form with placeholders
+templatizing is nothing but keeping the placeholders, submitting the actual values at run time
+
+jinja2 templating:- Ansible templates are jinja2 formatted files, there will be placeholders inside the file ,
+actual values will submitting at run time and copied to remote or destination server

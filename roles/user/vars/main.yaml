@@ -1,0 +1,5 @@
+# Here we can use like this , but as DRY principle we can put the common variables in group_vars folder 
+# in that all.yaml 
+
+# MONGODB_HOST: mongodb.devops-phani.fun
+# REDIS_HOST: redis.devops-phani.fun
