@@ -1,1 +1,2 @@
 MONGODB_HOST: mongodb.devops-phani.fun
+# In real projects in dev mongodb-dev.devops-phani.fun   thats why we using variable in vars

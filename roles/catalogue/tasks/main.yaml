@@ -31,4 +31,5 @@
 - name: "Reload service"
   ansible.builtin.import_role:
     name: common
-    tasks_from: system-reload-setup.yaml
+    # tasks_from: system-reload-setup.yaml
+    tasks_from: service-setup.yaml

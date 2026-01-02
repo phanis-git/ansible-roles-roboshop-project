@@ -10,7 +10,9 @@
     enabled: yes
 
 - name: "Set up root password"
-  ansible.builtin.command: mysql_secure_installation --set-root-pass RoboShop@1
+  # ansible.builtin.command: mysql_secure_installation --set-root-pass RoboShop@1
+  ansible.builtin.command: mysql_secure_installation --set-root-pass "{{ MYSQL_ROOT_PASSWORD }}"
+  
 
 - name: "Restart mysql"
   ansible.builtin.service:
