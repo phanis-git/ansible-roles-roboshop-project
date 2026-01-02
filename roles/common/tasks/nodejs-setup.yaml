@@ -7,7 +7,7 @@
 - name: "Install nodejs"
   ansible.builtin.package:
     name: nodejs 
-    start: present
+    state: present
 
 - name: "Install dependencies"
   community.general.npm:
