@@ -32,3 +32,8 @@
     src: /tmp/{{ component }}.zip
     dest: /app
     remote_src: yes
+
+# new from cgpt ref
+- name: Install npm dependencies
+  community.general.npm:
+    path: /app
